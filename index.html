@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="title" content="Advances of Query Processing in Vector Databases">
   <meta name="description" content="VLDB 2026 tutorial page for recent advances and challenges in query processing for vector databases.">
-  <meta name="keywords" content="vector databases, query processing, similarity search, filtered search, multi-similarity search, similarity join, VLDB 2026, tutorial">
+  <meta name="keywords" content="vector databases, query processing, similarity search, filtered search, similarity join, VLDB 2026, tutorial">
   <meta name="author" content="Jiadong Xie, Yingfan Liu, Jeffrey Xu Yu">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
@@ -34,10 +34,10 @@
   <meta name="citation_pdf_url" content="https://vdb-query-processing.github.io/static/pdfs/vector_tutorial_vldb2026.pdf">
   <meta name="theme-color" content="#123a7a">
 
-  <title>Advances of Query Processing in Vector Databases | VLDB 2026 Tutorial</title>
+  <title>Advances of Query Processing in Vector Databases</title>
   <link rel="canonical" href="https://vdb-query-processing.github.io/">
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="icon" type="image/png" href="static/images/favicon.png">
+  <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="static/css/index.css">
@@ -46,14 +46,13 @@
 <body>
   <nav class="tutorial-nav" aria-label="Main navigation">
     <a href="#top" class="nav-brand" aria-label="Back to top">
-      <img src="static/images/vldb_logo_simple.webp" alt="VLDB 2026 logo">
+      <img src="static/images/favicon.png" alt="CUHK emblem">
       <span>VLDB 2026 Tutorial</span>
     </a>
     <div class="nav-links">
       <a href="#abstract">Abstract</a>
       <a href="#outline">Outline</a>
       <a href="#contributors">Contributors</a>
-      <a href="#materials">Materials</a>
       <a href="#citation">BibTeX</a>
     </div>
   </nav>
@@ -61,59 +60,61 @@
   <main id="top">
     <section class="hero tutorial-hero is-fullheight-with-navbar">
       <div class="hero-body">
-        <div class="container is-max-widescreen">
-          <div class="hero-panel">
-            <div class="institution-strip" aria-label="Institution and conference logos">
-              <a href="https://www.cuhk.edu.hk/english/" target="_blank" rel="noopener" aria-label="The Chinese University of Hong Kong">
-                <img src="static/images/logos/cuhk_logo_requested.png" alt="The Chinese University of Hong Kong logo" class="logo-cuhk">
-              </a>
-              <a href="https://en.xidian.edu.cn/" target="_blank" rel="noopener" aria-label="Xidian University">
-                <img src="static/images/logos/xidian_logo_requested.png" alt="Xidian University logo" class="logo-xidian">
-              </a>
-              <a href="https://brand.hkust.edu.hk/hkustgz-marks" target="_blank" rel="noopener" aria-label="HKUST(GZ) Information Hub">
-                <img src="static/images/logos/hkustgz_logo_requested.png" alt="HKUST(GZ) Information Hub logo" class="logo-hkustgz">
-              </a>
-              <a href="https://vldb.org/2026/" target="_blank" rel="noopener" aria-label="VLDB 2026">
-                <img src="static/images/vldb_logo_simple.webp" alt="VLDB 2026 logo" class="logo-vldb">
-              </a>
+        <div class="container">
+          <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-7">
+              <div class="venue-pill">
+                <a href="https://vldb.org/2026/" target="_blank" rel="noopener">VLDB 2026</a>
+                <span>Tutorial</span>
+                <span>Presentation time: TBD</span>
+                <span>Location: TBD</span>
+              </div>
+              <h1 class="title publication-title">Advances of Query Processing in Vector Databases</h1>
+              <div class="publication-authors compact-authors">
+                <span class="author-block"><a href="https://xiejiadong.github.io/" target="_blank" rel="noopener">Jiadong Xie</a><sup>1</sup></span>
+                <span class="author-block"><a href="https://web.xidian.edu.cn/liuyingfan/en/index.html" target="_blank" rel="noopener">Yingfan Liu</a><sup>2</sup></span>
+                <span class="author-block"><a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/YU-JEFFREYXU/jeffreyxuyu" target="_blank" rel="noopener">Jeffrey Xu Yu</a><sup>3</sup></span>
+              </div>
+              <div class="affiliations">
+                <div><sup>1</sup>The Chinese University of Hong Kong</div>
+                <div><sup>2</sup>Xidian University</div>
+                <div><sup>3</sup>The Hong Kong University of Science and Technology (Guangzhou)</div>
+              </div>
+              <div class="hero-buttons" id="materials">
+                <a class="button is-link is-medium" href="static/pdfs/vector_tutorial_vldb2026.pdf" target="_blank" rel="noopener">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Tutorial PDF</span>
+                </a>
+                <a class="button is-light is-medium is-disabled" href="#" aria-disabled="true" onclick="return false;">
+                  <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span><span>Slides (TBD)</span>
+                </a>
+                <a class="button is-light is-medium" href="https://xiejiadong.github.io/files/paper/vector_survey.pdf" target="_blank" rel="noopener">
+                  <span class="icon"><i class="fas fa-book-open"></i></span><span>Survey PDF</span>
+                </a>
+                <a class="button is-light is-medium" href="https://vldb.org/2026/" target="_blank" rel="noopener">
+                  <span class="icon"><i class="fas fa-external-link-alt"></i></span><span>VLDB 2026</span>
+                </a>
+              </div>
             </div>
-
-            <div class="venue-pill">
-              <a href="https://vldb.org/2026/" target="_blank" rel="noopener">VLDB 2026</a>
-              <span>Tutorial</span>
-              <span>Presentation time: TBD</span>
-              <span>Location: TBD</span>
-            </div>
-
-            <h1 class="title publication-title">Advances of Query Processing in Vector Databases</h1>
-            <p class="subtitle publication-subtitle">
-              A survey-style tutorial on query-processing algorithms, systems, and open challenges for modern vector databases.
-            </p>
-
-            <div class="publication-authors compact-authors">
-              <span class="author-block"><a href="https://xiejiadong.github.io/" target="_blank" rel="noopener">Jiadong Xie</a><sup>1</sup></span>
-              <span class="author-block"><a href="https://web.xidian.edu.cn/liuyingfan/en/index.html" target="_blank" rel="noopener">Yingfan Liu</a><sup>2</sup></span>
-              <span class="author-block"><a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/YU-JEFFREYXU/jeffreyxuyu" target="_blank" rel="noopener">Jeffrey Xu Yu</a><sup>3</sup></span>
-            </div>
-            <div class="affiliations">
-              <div><sup>1</sup>The Chinese University of Hong Kong</div>
-              <div><sup>2</sup>Xidian University</div>
-              <div><sup>3</sup>The Hong Kong University of Science and Technology (Guangzhou)</div>
-            </div>
-
-            <div class="hero-buttons">
-              <a class="button is-link is-medium" href="static/pdfs/vector_tutorial_vldb2026.pdf" target="_blank" rel="noopener">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Tutorial PDF</span>
-              </a>
-              <a class="button is-light is-medium is-disabled" href="#" aria-disabled="true" onclick="return false;">
-                <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span><span>Slides (TBD)</span>
-              </a>
-              <a class="button is-light is-medium" href="https://xiejiadong.github.io/files/paper/vector_survey.pdf" target="_blank" rel="noopener">
-                <span class="icon"><i class="fas fa-book-open"></i></span><span>Survey PDF</span>
-              </a>
-              <a class="button is-light is-medium" href="https://vldb.org/2026/" target="_blank" rel="noopener">
-                <span class="icon"><i class="fas fa-external-link-alt"></i></span><span>VLDB 2026</span>
-              </a>
+            <div class="column is-5">
+              <aside class="conference-card" aria-label="Tutorial information card">
+                <div class="conference-logo-wrap">
+                  <img src="static/images/logos/vldb_logo_simple.webp" alt="VLDB 2026 logo" class="conference-vldb-logo">
+                </div>
+                <div class="logo-strip" aria-label="Institution logos">
+                  <img src="static/images/logos/cuhk_emblem.jpg" alt="The Chinese University of Hong Kong emblem">
+                  <img src="static/images/logos/xidian_logo.png" alt="Xidian University logo">
+                  <img src="static/images/logos/hkustgz_logo.png" alt="The Hong Kong University of Science and Technology (Guangzhou) logo">
+                </div>
+                <div class="quick-card-title">Query Processing in Vector Databases</div>
+                
+                <div class="topic-tags">
+                  <span>Similarity Search</span>
+                  <span>Multi-Similarity Search</span>
+                  <span>Filtered Search</span>
+                  <span>Similarity Join</span>
+                  <span>Open Challenges</span>
+                </div>
+              </aside>
             </div>
           </div>
         </div>
@@ -134,7 +135,7 @@
         <div class="section-heading-row">
           <div>
             <h2 class="section-title">Tutorial at a Glance</h2>
-            <p class="section-note">Designed as two 1.5-hour sessions, 3 hours in total.</p>
+            
           </div>
           <div class="schedule-badge">Time TBD · Location TBD</div>
         </div>
@@ -151,83 +152,69 @@
 
     <section class="section" id="contributors">
       <div class="container is-max-widescreen">
-        <h2 class="section-title">Contributors</h2>
-        <p class="section-note contributors-note">Presenter photos are clickable and link to the corresponding personal homepage.</p>
-        <div class="contributors-list">
-          <article class="contributor-row">
-            <a class="contributor-photo-link" href="https://xiejiadong.github.io/" target="_blank" rel="noopener" aria-label="Jiadong Xie homepage">
-              <img src="static/images/authors/jiadong_profile_square.jpg" alt="Jiadong Xie">
-            </a>
-            <div class="contributor-bio">
-              <h3>Jiadong Xie</h3>
-              <p class="contributor-affiliation">Ph.D. Candidate · The Chinese University of Hong Kong</p>
-              <p>Jiadong Xie is a Ph.D. candidate in the Department of Systems Engineering and Engineering Management at The Chinese University of Hong Kong, supervised by Prof. Jeffrey Xu Yu and Prof. Hong Cheng. His research focuses on big data management and analytics, with a particular emphasis on vector data and graphs.</p>
-              <p>His recent research covers vector database query processing, proximity-graph indexing, filtered vector search, approximate similarity join, and graph algorithms, with publications in venues such as SIGMOD/PACMMOD, PVLDB, WWW, KDD, ICDE, OSDI, and ACM TODS.</p>
-              <p><strong>Academic service:</strong> PC member/reviewer for TheWebConf, NeurIPS, KDD, ICDM, CIKM, and IEEE Big Data; journal reviewer for ACM TODS, IEEE TKDE, and ACM TKDD.</p>
-              <div class="tag-list"><span>Vector Databases</span><span>Graph Algorithms</span><span>Query Processing</span></div>
-            </div>
-          </article>
-
-          <article class="contributor-row">
-            <a class="contributor-photo-link" href="https://web.xidian.edu.cn/liuyingfan/en/index.html" target="_blank" rel="noopener" aria-label="Yingfan Liu homepage">
-              <img src="static/images/authors/yingfan_profile_square.webp" alt="Yingfan Liu">
-            </a>
-            <div class="contributor-bio">
-              <h3>Yingfan Liu</h3>
-              <p class="contributor-affiliation">Tenured Associate Professor · Xidian University</p>
-              <p>Yingfan Liu is a tenured Associate Professor in the School of Computer Science and Technology at Xidian University. He received his Ph.D. degree in Systems Engineering and Engineering Management from The Chinese University of Hong Kong in 2019, and received both his bachelor’s and master’s degrees from Xidian University.</p>
-              <p>His research interests include vector databases, high-performance computing, and LLM inference. His recent work studies range-filtered ANN, graph-based ANN index construction, privacy-preserving ANN, query processing with and without predicates, graph-based kNN search, approximate similarity join, and multi-reference-vector ANN.</p>
-              <p><strong>Recent topics:</strong> vector database systems, high-dimensional similarity search, graph indexing, range filtering, secure ANN, and efficient LLM inference support.</p>
-              <div class="tag-list"><span>Vector Databases</span><span>High-Performance Computing</span><span>LLM Inference</span></div>
-            </div>
-          </article>
-
-          <article class="contributor-row">
-            <a class="contributor-photo-link" href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/YU-JEFFREYXU/jeffreyxuyu" target="_blank" rel="noopener" aria-label="Jeffrey Xu Yu homepage">
-              <img src="static/images/authors/jeffrey_profile_square.png" alt="Jeffrey Xu Yu">
-            </a>
-            <div class="contributor-bio">
-              <h3>Jeffrey Xu Yu</h3>
-              <p class="contributor-affiliation">Professor · HKUST (Guangzhou)</p>
-              <p>Jeffrey Xu Yu is a Professor and Acting Head of the Data Science and Analytics Thrust at The Hong Kong University of Science and Technology (Guangzhou). His current research interests include vector databases, graph algorithms and systems, graph neural networks, query processing, and optimization.</p>
-              <p>He has served, or is serving, on more than 300 organization committees and program committees in international conferences and workshops. He has held multiple senior service roles, including Information Director and member of the ACM SIGMOD Executive Committee, Associate Editor of IEEE TKDE, and Associate Editor of the VLDB Journal.</p>
-              <p><strong>Editorial service:</strong> currently Associate Editor for ACM TODS and WWW Journal.</p>
-              <div class="tag-list"><span>Database Systems</span><span>Graph Systems</span><span>Query Optimization</span></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light-section" id="materials">
-      <div class="container is-max-widescreen">
-        <div class="section-heading-row">
+        <div class="section-heading-row contributor-heading">
           <div>
-            <h2 class="section-title">Materials</h2>
-            <p class="section-note">Tutorial PDF and related survey materials.</p>
+            <h2 class="section-title">Contributors</h2>
+            <p class="section-note">Author portraits link to personal homepages.</p>
           </div>
         </div>
-        <div class="materials-grid">
-          <a class="material-card" href="static/pdfs/vector_tutorial_vldb2026.pdf" target="_blank" rel="noopener">
-            <span class="material-icon"><i class="fas fa-file-pdf"></i></span>
-            <h3>Tutorial PDF</h3>
-            <p>Local copy of the VLDB 2026 tutorial proposal.</p>
-          </a>
-          <a class="material-card disabled-card" href="#" aria-disabled="true" onclick="return false;">
-            <span class="material-icon"><i class="fas fa-chalkboard-teacher"></i></span>
-            <h3>Slides</h3>
-            <p>TBD. Replace this link after the slides are finalized.</p>
-          </a>
-          <a class="material-card" href="https://xiejiadong.github.io/files/paper/vector_survey.pdf" target="_blank" rel="noopener">
-            <span class="material-icon"><i class="fas fa-book-open"></i></span>
-            <h3>Survey PDF</h3>
-            <p>A more detailed survey on query processing in vector databases.</p>
-          </a>
+
+        <div class="contributors-list">
+          <article class="contributor-row">
+            <a class="portrait-link" href="https://xiejiadong.github.io/" target="_blank" rel="noopener" aria-label="Open Jiadong Xie's homepage">
+              <img src="static/images/authors/jiadong_xie_square_clean.jpg" alt="Jiadong Xie">
+            </a>
+            <div class="contributor-content">
+              <div class="contributor-kicker">The Chinese University of Hong Kong</div>
+              <h3>Jiadong Xie</h3>
+              <p>
+                Jiadong Xie is a Ph.D. candidate in the Department of Systems Engineering and Engineering Management at The Chinese University of Hong Kong, supervised by Prof. Jeffrey Xu Yu and Prof. Hong Cheng. His research focuses on big data management and analytics, with a particular emphasis on vector data and graphs.
+              </p>
+              <p>
+                His recent work covers vector search, vector query processing, proximity graph construction, similarity join, range-filtered ANN search, graph algorithms, and graph systems. His publications and tutorials include VLDB 2026, SIGMOD 2026, TheWebConf 2026, KDD 2026, SIGMOD 2025, PVLDB 2025, ICDE 2025, TODS 2025, and OSDI 2023. He has served as a conference program committee member or reviewer for TheWebConf, NeurIPS, KDD, ICDM, CIKM, and IEEE Big Data, and as a journal reviewer for TODS, TKDE, and TKDD.
+              </p>
+              <div class="service-tags"><span>Vector Databases</span><span>Graph Algorithms</span><span>ANN Search</span><span>PC / Reviewer</span></div>
+            </div>
+          </article>
+
+          <article class="contributor-row">
+            <a class="portrait-link" href="https://web.xidian.edu.cn/liuyingfan/en/index.html" target="_blank" rel="noopener" aria-label="Open Yingfan Liu's homepage">
+              <img src="static/images/authors/yingfan_liu_square_clean.webp" alt="Yingfan Liu">
+            </a>
+            <div class="contributor-content">
+              <div class="contributor-kicker">Xidian University</div>
+              <h3>Yingfan Liu</h3>
+              <p>
+                Yingfan Liu is a tenured Associate Professor in the School of Computer Science and Technology at Xidian University. He received his Ph.D. degree in Systems Engineering and Engineering Management from The Chinese University of Hong Kong in 2019, and received his Bachelor and Master degrees from Xidian University in 2011 and 2014.
+              </p>
+              <p>
+                His research focuses on vector databases, high-performance computing, and LLM inference. His recent selected publications include work on generalized range-filtered ANN search, proximity graph construction, privacy-preserving ANN search, predicate-aware vector querying, graph-based KNN search, approximate similarity join, and multi-vector search, appearing in venues such as KDD 2026, SIGMOD 2026, WWW 2026, VLDB 2025, ICDE 2025, TODS 2025, and SIGMOD 2025.
+              </p>
+              <div class="service-tags"><span>Vector Database</span><span>HPC</span><span>LLM Inference</span><span>ANN Systems</span></div>
+            </div>
+          </article>
+
+          <article class="contributor-row">
+            <a class="portrait-link" href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/YU-JEFFREYXU/jeffreyxuyu" target="_blank" rel="noopener" aria-label="Open Jeffrey Xu Yu's homepage">
+              <img src="static/images/authors/jeffrey_yu_square_clean.png" alt="Jeffrey Xu Yu">
+            </a>
+            <div class="contributor-content">
+              <div class="contributor-kicker">The Hong Kong University of Science and Technology (Guangzhou)</div>
+              <h3>Jeffrey Xu Yu</h3>
+              <p>
+                Jeffrey Xu Yu is a Professor and Acting Head of the Data Science and Analytics Thrust at The Hong Kong University of Science and Technology (Guangzhou). His current research interests include vector databases, graph algorithms and systems, graph neural networks, query processing, and optimization.
+              </p>
+              <p>
+                He has served or serves on over 300 organization committees and program committees in international conferences and workshops, including PC co-chair roles for APWeb, WAIM, APWeb/WAIM, WISE, PAKDD, DASFAA, ICDM, NDBC, ADMA, CIKM, BigComp, and DSAA, as well as general co-chair roles for APWeb and ICDM. He has also served as Information Director and member of the ACM SIGMOD Executive Committee, Associate Editor of IEEE TKDE and the VLDB Journal, and currently serves as Associate Editor for ACM TODS and WWW Journal.
+              </p>
+              <div class="service-tags"><span>Query Processing</span><span>Graph Systems</span><span>SIGMOD EC</span><span>ACM TODS AE</span><span>VLDBJ AE</span></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="citation">
+    <section class="section light-section" id="citation">
       <div class="container is-max-widescreen">
         <h2 class="section-title">BibTeX</h2>
         <div class="bib-grid">
@@ -246,16 +233,16 @@
           </div>
           <div class="bib-card">
             <div class="bib-header"><h3>Survey</h3><button class="copy-button" data-target="bib-survey">Copy</button></div>
-            <pre id="bib-survey"><code>@misc{xie2026survey,
-  title        = {A Survey on Query Processing in Vector Databases},
-  author       = {Xie, Jiadong and Liu, Yingfan and Yu, Jeffrey Xu},
-  year         = {2026},
-  howpublished = {\url{https://xiejiadong.github.io/files/paper/vector_survey.pdf}},
-  note         = {Survey manuscript}
+            <pre id="bib-survey"><code>@article{xie2026survey,
+  title   = {A Survey on Query Processing in Vector Databases},
+  author  = {Xie, Jiadong and Liu, Yingfan and Yu, Jeffrey Xu},
+  journal = {engrXiv},
+  year    = {2026},
+  doi     = {10.31224/7009},
+  url     = {https://doi.org/10.31224/7009}
 }</code></pre>
           </div>
         </div>
-        <p class="section-note citation-note">Note: VLDB pages and DOI are left as placeholders until the official proceedings metadata is available.</p>
       </div>
     </section>
   </main>
@@ -267,7 +254,7 @@
           <strong>Advances of Query Processing in Vector Databases</strong><br>
           VLDB 2026 Tutorial · Presentation time/location TBD
         </div>
-        <a href="https://vldb.org/2026/" target="_blank" rel="noopener"><img src="static/images/vldb_logo_simple.webp" alt="VLDB 2026 logo"></a>
+        <a href="https://vldb.org/2026/" target="_blank" rel="noopener"><img src="static/images/logos/vldb_logo_simple.webp" alt="VLDB 2026 logo"></a>
       </div>
     </div>
   </footer>
