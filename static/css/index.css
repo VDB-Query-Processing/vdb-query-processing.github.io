@@ -228,13 +228,20 @@ pre { background: #0e1728; color: #d9e6ff; border-radius: 18px; padding: 1.1rem;
 }
 
 .visitor-map {
-  background: #0f1e36;
-  border-top: 1px solid rgba(255,255,255,.10);
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+  border-top: 1px solid var(--line);
   text-align: center;
-  padding: 1.25rem 1rem 1.6rem;
+  padding: .72rem 1rem .82rem;
 }
 
-.visitor-map img,
-.visitor-map iframe {
-  max-width: 100%;
+.visitor-map-inner {
+  width: min(280px, 100%);
+  margin: 0 auto;
+  padding: .38rem;
+  border: 1px solid rgba(33,63,119,.10);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(20, 38, 80, .045);
+  overflow: hidden;
+  opacity: .9;
 }
