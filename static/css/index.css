@@ -241,28 +241,17 @@ pre { background: #0e1728; color: #d9e6ff; border-radius: 18px; padding: 1.1rem;
   background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
   border-top: 1px solid var(--line);
   text-align: center;
-  padding: .75rem 1rem .9rem;
+  padding: .72rem 1rem .82rem;
 }
 
 .visitor-map-inner {
-  width: fit-content;
-  max-width: 220px;
+  width: min(280px, 100%);
   margin: 0 auto;
-  padding: .35rem;
+  padding: .38rem;
   border: 1px solid rgba(33,63,119,.10);
   border-radius: 14px;
   background: #fff;
   box-shadow: 0 6px 18px rgba(20, 38, 80, .045);
-  overflow: visible;
-}
-.visitor-map-link {
-  display: block;
-  line-height: 0;
-}
-.visitor-map-img {
-  display: block;
-  width: 230px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 9px;
+  overflow: hidden;
+  opacity: .9;
 }
