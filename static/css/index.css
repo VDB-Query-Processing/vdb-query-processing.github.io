@@ -74,7 +74,7 @@ a:hover { color: var(--blue-dark); }
 .top-logo-hkustgz { max-height: 72px; max-width: 340px; }
 .centered-pill { justify-content: center; }
 .centered-title {
-  max-width: 1280px;
+  max-width: min(1280px, calc(100vw - 96px));
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -106,7 +106,7 @@ a:hover { color: var(--blue-dark); }
   letter-spacing: -0.055em;
   color: #0f2344;
   margin-bottom: 1.1rem;
-  max-width: none;
+  max-width: 1280px;
 }
 .publication-subtitle {
   font-size: clamp(1.08rem, 2vw, 1.38rem);
