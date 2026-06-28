@@ -69,9 +69,9 @@ a:hover { color: var(--blue-dark); }
   object-fit: contain;
 }
 .top-logo-vldb { max-height: 82px; max-width: 240px; }
-.top-logo-cuhk { max-height: 94px; max-width: 140px; }
-.top-logo-xidian { max-height: 78px; max-width: 280px; }
-.top-logo-hkustgz { max-height: 72px; max-width: 340px; }
+.top-logo-cuhk { max-height: 82px; max-width: 240px; }
+.top-logo-xidian { max-height: 82px; max-width: 240px; }
+.top-logo-hkustgz { max-height: 82px; max-width: 240px; }
 .centered-pill { justify-content: center; }
 .centered-title {
   max-width: min(1280px, calc(100vw - 96px));
