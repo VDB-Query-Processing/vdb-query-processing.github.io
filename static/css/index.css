@@ -69,7 +69,7 @@ a:hover { color: var(--blue-dark); }
   object-fit: contain;
 }
 .top-logo-vldb { max-height: 82px; max-width: 240px; }
-.top-logo-cuhk { max-height: 94px; max-width: 120px; }
+.top-logo-cuhk { max-height: 94px; max-width: 140px; }
 .top-logo-xidian { max-height: 78px; max-width: 280px; }
 .top-logo-hkustgz { max-height: 72px; max-width: 340px; }
 .centered-pill { justify-content: center; }
