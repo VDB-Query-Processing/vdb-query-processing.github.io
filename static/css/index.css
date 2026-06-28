@@ -71,7 +71,7 @@ a:hover { color: var(--blue-dark); }
 .top-logo-vldb { max-height: 82px; max-width: 240px; }
 .top-logo-cuhk { max-height: 82px; max-width: 280px; }
 .top-logo-xidian { max-height: 82px; max-width: 240px; }
-.top-logo-hkustgz { max-height: 82px; max-width: 240px; }
+.top-logo-hkustgz { max-height: 102px; max-width: 240px; }
 .centered-pill { justify-content: center; }
 .centered-title {
   max-width: min(1280px, calc(100vw - 96px));
@@ -224,7 +224,7 @@ pre { background: #0e1728; color: #d9e6ff; border-radius: 18px; padding: 1.1rem;
   .top-logo-vldb { max-height: 60px; max-width: 190px; }
   .top-logo-cuhk { max-height: 60px; max-width: 220px; }
   .top-logo-xidian { max-height: 60px; max-width: 190px; }
-  .top-logo-hkustgz { max-height: 60px; max-width: 190px; }
+  .top-logo-hkustgz { max-height: 80px; max-width: 190px; }
 }
 
 .visitor-map {
