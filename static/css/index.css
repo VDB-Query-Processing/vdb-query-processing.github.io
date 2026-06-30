@@ -30,7 +30,18 @@ a:hover { color: var(--blue-dark); }
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--line);
 }
-.nav-brand { display: inline-flex; align-items: center; gap: .75rem; font-weight: 800; color: var(--ink); }
+.nav-brand { 
+  display: inline-flex; 
+  align-items: center; 
+  gap: .75rem; 
+  font-weight: 400; 
+  color: var(--ink); 
+}
+
+.nav-brand > span {
+  font-weight: 800;
+}
+/* .nav-brand { display: inline-flex; align-items: center; gap: .75rem; font-weight: 800; color: var(--ink); } */
 .nav-brand img { height: 34px; width: 112px; border-radius: 9px; }
 .nav-links { display: flex; gap: 1.25rem; align-items: center; font-size: .96rem; font-weight: 650; }
 .nav-links a { color: #32405a; }
